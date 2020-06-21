@@ -1,0 +1,64 @@
+if you are using mac to run in admin mode in terminal make sure you use sudo in the begining of the command u enter 
+
+1) sudo npm install -g @angular/cli@7.0.3
+
+2) To create a project go down to the path where you want to create a project and better to name it as frontend folder
+
+3) to create a project : ng new projectname
+it will ask you a question 
+** would you like to add Angular routing ? Yes
+** Which stylesheet format would you like to use?
+--> CSS
+
+press enter 
+
+4) go in to projectname folder and do ls
+
+you will see files in the project folder (i.e : README.md , node_modules , ssrc , angular.json , package-lock.json , tsconfig.json , e2e , package.json , tslint.json)
+
+----------------------------------------
+To Build and Run the application:
+----------------------------------------
+
+5) ng serve
+
+if you make any change in the code for example in index.html title change save it in the IDE and go to browser it will auto reflect the change by using ng serve command
+
+next :
+you can resmove the H2 tag in app.component.html like unwanted urls
+
+and next 
+app.component.ts 
+
+for example delete the new line or empty line in the end of the component.ts class and save it and run 
+
+command : ng lint 
+
+it will show the error 
+
+--> all the rules are defined in tslint.json
+
+7) next command : ng build 
+
+when you go to IDE you will see a new folder called dist , and now you can take just the dist folder and can lanch on web server
+
+typically when you deploy angular application to prod i would do ng dist 
+and i will take the folder it creates the project and put in on the web server
+
+--------
+
+8) In angular to test the code use command : ng test
+
+ant it will open the browser ng test will run the unit test which are written in angular , typically unit test for angular is written in framework called Jasmin and we use karma to run the unit test 
+
+to view where the test configuration is go to ide and look for karma.conf.js
+Extensions for test - .specs.ts
+
+9) kill the process by using command c
+
+10) another command stands for ng e2e --> stands for ng end2end test
+
+11) angular.json file will have all the commmands we used are defined here 
+
+
+
